@@ -110,9 +110,9 @@ Clone the repository using git, and open it with visual studio code.
 Clone this repository to your desired folder:
 
   cd "your-folder"
-  git clone https://github.com/joramot/portfolio-desktop-version.git
+  git clone https://github.com/joramot/capstone_one_global_summit.git
 
-  git clone [git@github.com:[https:/adelphinsucasa/Portfolio-Setup-and-mobile-first.git]
+  git clone [git@github.com:[https://github.com/joramot/capstone_one_global_summit.git]
 
 
 ### Usage
