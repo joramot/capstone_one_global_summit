@@ -1,8 +1,5 @@
-# capstone_one_global_summit
+# Capstone - Talent Land Mexico 2023.
 
-# Jose RM - Capstone Global Summit 2023
-
-# portfolio
 <a name="readme-top"></a>
 
 <!--
@@ -35,9 +32,7 @@ After you're finished please remove all the comments and instructions!
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="./assets/Logo_BeautifulBoys.png" alt="logo" width="140"  height="auto" />
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <br/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -45,11 +40,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
-- [capstone\_one\_global\_summit](#capstone_one_global_summit)
-- [Jose RM - Capstone Global Summit 2023](#jose-rm---capstone-global-summit-2023)
-- [portfolio](#portfolio)
+- [Capstone - Talent Land Mexico 2023.](#capstone---talent-land-mexico-2023)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 **Portfolio Jose RM. Full Stack Developer** (or so I try :D) ](#-portfolio-jose-rm-full-stack-developer-or-so-i-try-d-)
+- [📖 \*\*Talent Land Mexico 2023. ](#-talent-land-mexico-2023-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -67,8 +60,9 @@ After you're finished please remove all the comments and instructions!
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
+ <br/>
 
-# 📖 **Portfolio Jose RM. Full Stack Developer** (or so I try :D) <a name="about-project"></a>
+# 📖 **Talent Land Mexico 2023. <a name="about-project"></a>
 
 **Portfolio Jose RM.** This is the Jose RM Portfolio, that allows you understand what are my skills as a developer.
 
@@ -80,8 +74,9 @@ After you're finished please remove all the comments and instructions!
 
 - HTML
 - CSS
+- Javascript
 - Visual Studio Code 
-- Figma
+- Behance
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,8 +84,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-- [Live Demo Link](https://joramot.github.io/capstone_one_global_summit/)
+- [Live Demo Link]( Comming soon!!!)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +129,7 @@ You can deploy this project using visual studio code and Figma.
 
 👤 ** Jose RM **
 
-- Project presentation: https://www.loom.com/share/76fd0013036545e98a6468ab7acfd356
+- Project presentation: comming soon!!!
 
 - GitHub: https://github.com/joramot
 - Twitter: https://twitter.com/el_rulis
@@ -147,10 +141,9 @@ You can deploy this project using visual studio code and Figma.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-- [ ] **Link to YouTube Channel**
-- [ ] **News Section**
-- [ ] **Blog**
+- [ ] **1**
+- [ ] **2**
+- [ ] **3**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,8 +183,8 @@ I would like to thank Microverse and all the persons that got in touch with me w
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT] (./LICENSE) licensed.
+<br>
+This projectt is Behance (https://creativecommons.org/licenses/by-nc/4.0/legalcode) Licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
