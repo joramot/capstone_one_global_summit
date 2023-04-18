@@ -14,3 +14,171 @@ body {
   box-sizing: border-box;
   font-family: Lato, sans-serif;
 }
+
+hr {
+  border: 1px solid var(--orange);
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* BEGIN Header Section */
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+.partner div {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.partner img {
+  width: 100px;
+}
+
+header div:nth-child(1) {
+  display: none;
+  color: white;
+  background-color: var(--black);
+}
+
+header div:nth-child(1) ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+header div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div:nth-child(2) ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-right: 3.5rem;
+}
+
+header div:nth-child(2) nav {
+  display: none;
+}
+
+header div:nth-child(2) img {
+  display: none;
+}
+
+header div:nth-child(2) span {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--dark-gray);
+}
+
+/* **END Header Section** */
+
+/* **BEGIN Headline Section** */
+.headline {
+  background-image: url(../assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.headline p,
+h1 {
+  color: var(--orange);
+}
+
+/* **END Headline Section** */
+
+/* **BEGIN Program Section** */
+.program {
+  background-image: url(../assets/background-black.png);
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray);
+}
+
+/* **END Program Section** */
+
+/* **BEGIN Speakers Section** */
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 6fr;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  margin: 0 10% 0 10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  font-size: small;
+}
+
+.card hr {
+  margin: 0;
+  padding: 5px;
+}
+
+button {
+  width: 80%;
+  background-color: white;
+  color: var(--dark-gray);
+  border: solid 1px #adb5bd;
+  border-radius: 2%;
+  padding: 0.5rem;
+}
+
+/* **END Speakers Section** */
+
+/* **BEGIN Partner Section** */
+.partner {
+  background-color: #444547;
+  height: 25vh;
+  color: var(--gray);
+  align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  header div:nth-child(2) span {
+    display: none;
+  }
+
+  header div:nth-child(2) img {
+    display: block;
+    width: 50px;
+  }
+
+  header div:nth-child(2) nav {
+    display: block;
+  }
+
+  header div:nth-child(1) {
+    display: block;
+    color: white;
+    background-color: var(--black);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
