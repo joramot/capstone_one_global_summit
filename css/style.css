@@ -5,6 +5,7 @@
   --orange: #ec5242;
   --gray: #d3d3d3;
   --dark-gray: rgb(53, 49, 49);
+  --green: #13d606;
 }
 
 html,
@@ -15,8 +16,21 @@ body {
   font-family: Lato, sans-serif;
 }
 
+h1 {
+  font-size: 4rem;
+  font-family: 'Rubik Dirt', sans-serif;
+  color: var(--green);
+  margin: 0;
+}
+
+h3 {
+  color: var(--green);
+  font-size: large;
+  font-weight: bold;
+}
+
 hr {
-  border: 1px solid var(--orange);
+  border: 1px solid var(--green);
 }
 
 li,
@@ -41,6 +55,11 @@ a {
   width: 100px;
 }
 
+header .container {
+  padding: 1.5rem;
+  font-weight: bold;
+}
+
 header div:nth-child(1) {
   display: none;
   color: white;
@@ -55,6 +74,13 @@ header div:nth-child(1) ul {
   padding: 0.5rem;
 }
 
+.program img {
+  color: gray;
+  padding: 0;
+  width: 50px;
+  height: auto;
+}
+
 header div:nth-child(2) {
   display: flex;
   justify-content: space-between;
@@ -62,9 +88,8 @@ header div:nth-child(2) {
 
 header div:nth-child(2) ul {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-right: 3.5rem;
+  column-gap: 4rem;
+  margin-top: 1.5rem;
 }
 
 header div:nth-child(2) nav {
@@ -76,9 +101,18 @@ header div:nth-child(2) img {
 }
 
 header div:nth-child(2) span {
+  display: block;
   font-size: 50px;
   font-weight: bold;
   color: var(--dark-gray);
+}
+
+header>div:nth-child(2) div p {
+  margin: 1rem 3.5rem 0 0;
+  border: solid 5px var(--green);
+  padding: 0.5rem 2rem;
+  color: var(--green);
+  display: none;
 }
 
 /* **END Header Section** */
@@ -86,13 +120,42 @@ header div:nth-child(2) span {
 /* **BEGIN Headline Section** */
 .headline {
   background-image: url(../assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
-  background-position: center;
   background-size: cover;
 }
 
-.headline p,
-h1 {
-  color: var(--orange);
+.row p {
+  font-size: 2rem;
+}
+
+.headline .container {
+  padding: 4rem 0 4rem 0;
+}
+
+.row>p {
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.headline .container>div:nth-child(3) p {
+  width: 40rem;
+  padding: 1rem;
+  border: solid 1px var(--gray);
+}
+
+.headline .container>div:nth-child(4) p {
+  width: 40rem;
+  padding: 1rem 1rem 1rem 0;
+  font-weight: bolder;
+  font-size: 40px;
+  color: var(--dark-gray);
+}
+
+.headline .container>div:nth-child(5) p {
+  width: 40rem;
+  padding: 1rem 1rem 1rem 0;
+  font-weight: bolder;
+  font-size: medium;
+  color: var(--dark-gray);
 }
 
 /* **END Headline Section** */
@@ -106,6 +169,41 @@ h1 {
   flex-direction: column;
   align-items: center;
   color: var(--gray);
+  justify-content: space-around;
+  padding: 6rem;
+  row-gap: 3rem;
+}
+
+.join p {
+  display: flex;
+  text-align: center;
+}
+
+.program .container p {
+  font-size: small;
+}
+
+.program .container div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+  background-color: gray;
+  margin: 0.25rem;
+  padding: 1rem;
+  font-size: medium;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.join {
+  background-color: var(--green);
+  color: white;
+  padding: 0.75rem 4rem;
 }
 
 /* **END Program Section** */
@@ -115,6 +213,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem;
+  row-gap: 2rem;
 }
 
 .grid {
@@ -145,26 +245,53 @@ button {
   border: solid 1px #adb5bd;
   border-radius: 2%;
   padding: 0.5rem;
+  display: block;
 }
-
 /* **END Speakers Section** */
 
 /* **BEGIN Partner Section** */
 .partner {
+  display: flex;
+  flex-direction: column;
   background-color: #444547;
-  height: 25vh;
   color: var(--gray);
-  align-content: center;
+  align-items: center;
+  padding: 3rem 0 4.5rem 0;
+  gap: 1.5rem;
 }
 
+.partner>div:nth-child(1) {
+  display: block;
+}
+
+.partner>div:nth-child(2) {
+  display: flex;
+  justify-content: last baseline;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* END Partner Section */
+
+/* BEGIN Footer Section  */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+/* END Footer Section */
+
 @media screen and (min-width: 768px) {
+
   header div:nth-child(2) span {
     display: none;
   }
 
   header div:nth-child(2) img {
     display: block;
-    width: 50px;
+    width: 150px;
   }
 
   header div:nth-child(2) nav {
@@ -179,6 +306,30 @@ button {
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: 6fr;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    margin: 0 10% 0 10%;
+  }
+
+  .program .container {
+    display: flex;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .join {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  header>div:nth-child(2) div p {
+    display: block;
   }
 }
