@@ -6,15 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  
   <title>Talent Land Mexico 2023</title>
   <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+  <!-- CSS Style -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/dropdownmenu.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
 </head>
 
 <body>
@@ -29,8 +36,8 @@
       </ul>
     </div>
     <div class="container">
-      <img src="./assets/favicon.png" alt="">
-      <span id="openOnClick"> </span>
+      <img src="./assets/logo-talent-land.png" alt="">
+      <span id="openOnClick">&#9776</span>
       <nav>
         <ul>
           <li><a href="./about.html"> About</a></li>
@@ -38,16 +45,26 @@
           <li>Join</li>
           <li>Sponsor</li>
           <li>News</li>
-          <li>CC Campaing</li>
         </ul>
       </nav>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">&times;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p>CC Campaing</p>
+      </div>
     </div>
   </header>
   <main>
     <section class="headline">
       <div class="container">
         <div class="row">
-          <p>"Hello, Changing the world with talent"</p>
+          <p>"Hello!! Changing the world with talent"</p>
         </div>
         <div>
           <h1>Talent Land Mexico 2023</h1>
@@ -59,6 +76,8 @@
         </div>
         <div>
           <p>2023.04.01(Sat) ~ 04(Tue)</p>
+        </div>
+        <div>
           <p>Expo Guadalajara. Av. Mariano Otero 1499, Verde Valle, 44550 Guadalajara, Jal. Mexico.</p>
         </div>
       </div>
@@ -68,35 +87,40 @@
         <h2>Main Program</h2>
         <hr>
       </div>
-      <div>
-        <div class="">
-          <img src="" alt="">
-          <h3>Lecture</h3>
-          <p></p>
+      <div class="container">
+        <div>
+          <img src="./assets/star_border_white_24dp.svg" alt="">
+          <h3>Main Stage</h3>
+          <p>Listen to the speakers from various countries about the messenges of sharing and opening.</p>
         </div>
         <div>
-          <img src="" alt="">
-          <h3>CC Exhibition</h3>
-          <p></p>
+          <img src="./assets/business_center_white_24dp.svg" alt="">
+          <h3>Business Land</h3>
+          <p>In this land you will be able to explore new trends, acquire tools and discuss innovative strategies to
+            expand your business.</p>
         </div>
         <div>
-          <img src="" alt="">
-          <h3>Forum</h3>
-          <p></p>
+          <img src="./assets/code_white_24dp.svg" alt="">
+          <h3>Developer Land</h3>
+          <p>In this scenario you will be able to discuss and discover the potential of AI.</p>
         </div>
         <div>
-          <img src="" alt="">
-          <h3>Workshop</h3>
-          <p></p>
+          <img src="./assets/sports_esports_white_24dp.svg" alt="">
+          <h3>Gamer Land</h3>
+          <p>Dive into the vast playing field this land has to offer and reveal its secrets as you win a game to the
+            future.</p>
         </div>
         <div>
-          <img src="" alt="">
-          <h3>CC Ignite</h3>
-          <p></p>
+          <img src="./assets/keyboard_white_24dp.svg" alt="">
+          <h3>Workshops</h3>
+          <p>Try creating your own work using open source license rather than just watching at it.</p>
         </div>
       </div>
-      <div>
+      <div class="hidden">
         <a href="">SEE THE WHOLE PROGRAM</a>
+      </div>
+      <div class="join">
+        <p>Join Talent Land 2023 Mexico</p>
       </div>
     </section>
     <section class="speakers">
@@ -165,13 +189,11 @@
           </div>
         </div>
       </div>
-      <button>MORE  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-      </svg></button> 
+      <button>MORE <img src="./assets/keyboard_arrow_down_black_36dp.svg" alt="" srcset=""> </button>
     </section>
     <section class="container-fluid partner">
       <div>
-        <p>Partner</p>
+        <h2>Partners</h2>
         <hr>
       </div>
       <div>
@@ -183,7 +205,7 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="container-fluid">
     <div>
       <p>Creative Commons Mexico</p>
     </div>
@@ -192,6 +214,7 @@
       <p>Texto descriptivo</p>
     </div>
   </footer>
+  <script src=""></script>
 </body>
 
 </html>
