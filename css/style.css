@@ -307,7 +307,6 @@ footer {
 
 /* END Footer Section */
 
-
 /* About page */
 
 .about_headline {
@@ -579,5 +578,12 @@ header > div:nth-child(2) div p {
 
   .dropdown {
     display: none;
+  }
+
+  .past_images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
   }
 }
