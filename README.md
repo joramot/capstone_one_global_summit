@@ -167,7 +167,10 @@ If you like this project you can contact the author througt the above meddia lin
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and all the persons that got in touch with me while we were working on this project
+I would like to thank Microverse and all the persons that got in touch with me while we were working on this project.
+
+This web page has been created using a Cindy Shin design.
+I would like to thank [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,6 +188,6 @@ I would like to thank Microverse and all the persons that got in touch with me w
 
 This project is [MIT] (./LICENSE) licensed.
 <br>
-This projectt is Behance (https://creativecommons.org/licenses/by-nc/4.0/legalcode) Licensed.
+This projectt is [Creative Commons] (https://creativecommons.org/licenses/by-nc/4.0/legalcode) Licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
