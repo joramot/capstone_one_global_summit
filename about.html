@@ -1,67 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Talent Land Mexico 2023</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- title  -->
+  <title>About Talent Land Mexico 2023</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+  <!-- CSS Style -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- Google Font -->
+  <script src="https://kit.fontawesome.com/e52d74ec85.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div>
       <ul>
-        <li>facebook</li>
-        <li>twitter</li>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
         <li>English</li>
         <li>My Page</li>
         <li>Logout</li>
       </ul>
     </div>
     <div>
-      <span>Hamburger Icon</span>
-      <span>Logo</span>
+      <img src="./assets/logo-talent-land.png" alt="">
+      <span id="openOnClick"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776</a></span>
       <nav>
         <ul>
-          <li>About</li>
+          <li><a href="./index.html">Home</a></li>
           <li>Program</li>
           <li>Join</li>
           <li>Sponsor</li>
           <li>News</li>
-          <li>CC Campaing</li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <section class="about">
-    <div>
-      <h2>Talent Land Mexico 2023</h2>
-      <hr>
-      <p>Developers of the world, let get together! A space for sharing the joy of coding with peolple from over seventy different countries. Join us on September 12th, 2023 in Mexico City</p>
-
-      <p>Please contact us per Email for any further questions about Web Development Global Conference 2023</p>
-      <small><a href="">contact@thebestweb.com</a></small>
-    </div>
-    <div>
-      <p>Web Development Conference Logo</p>
-      <hr>
-      <p>The logo of the Web Development Conference was decided through the logo competition on September 8th 2015</p>
-      <img src="" alt="">
-    </div>
-    <div>
-      <p>See the past Web Conferences</p>
-      <hr>
-      <p>Take a look to the last two Web Development Conferences wich took place in Bogotá and Madrid</p>
+      <div class="dropdown">
+        <ul id="options" class="dropdown-content">
+          <li><a href="./index.html">Home</a></li>
+          <li>Program</li>
+          <li>Join</li>
+          <li>Sponsor</li>
+          <li>News</li>
+        </ul>
+      </div>
       <div>
-        <img src="" alt="">
-        <img src="" alt="">
+        <p>CC Campaing</p>
       </div>
     </div>
-    <footer>
-      <p>creative commons. </p>
-      <p>2023 Creative Commons Mexico</p>
-      <p>Some Rights Reserved</p>
-    </footer>
-  </section>
+  </header>
+  <main>
+    <section class="about_headline">
+      <div class="container">
+        <div>
+          <h1>Talent Land Mexico 2023</h1>
+        </div>
+        <div>
+          <p>Talent Land 2023 will be dedicated to the development of talent, so that the participants can meet with
+            experts from different areas who will share their experience and knowledge.
+            This event is a place for creative minds, entrepreneurs and young talents to find new ideas, new people and
+            new technologies to improve their personal and professional lives.
+            Talent Land 2023 is underway and it will be unique.</p>
+        </div>
+        <div>
+          <p>Please contact us per email for any further questions about CC Talent Land Mexico.</p>
+          <p>info@talent-network.org</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_talent container">
+      <h2>Jalisco Talent Land </h2>
+      <hr>
+      <p>Since the first Talent Land we managed to bring together creativity and technology, for the next 2023, the
+        machinery has been set in motion to create new emotions, promote the development of talent and promote
+        entrepreneurship among young people.
+        With the same entrepreneurial spirit that has allowed us to carry out unforgettable experiences on a global
+        level, in April 2023 we will discover new ways to change the world with talent.
+        “Talent Land 2023: the future is yours”
+        Get ready!</p>
+      <div>
+        <img src="./assets/logo-talent-land.png" alt="">
+      </div>
+    </section>
+
+    <section class="past-editions">
+      <h2>See the past editions of Talent Land</h2>
+      <p>Take a look at the last two Talent Land Mexico in Expo Guadalajara</p>
+      <div class="past_images">
+        <div class="box"><img class="image" src="./images/TalentLand_2021.jpg" alt="">
+          <div class="middle">
+            <div class="text">Talent Land 2021</div>
+          </div>
+        </div>
+        <div class="box"><img class="image" src="./images/TalentLand_2022.jpg" alt="">
+          <div class="middle">
+            <div class="text">Talent Land 2022</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="container-fluid">
+    <div>
+      <p>© Copyright 2023</p>
+    </div>
+    <div>
+      <p>Talent Network.</p>
+      <p>Todos los derechos reservados. </p>
+    </div>
+  </footer>
+  <script src="./js/dropdown_menu.js"></script>
 </body>
+
 </html>
