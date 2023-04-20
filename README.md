@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 **Talent Land Mexico 2023. <a name="about-project"></a>
 
-**Portfolio Jose RM.** This is the Jose RM Portfolio, that allows you understand what are my skills as a developer.
+
 
 ## 🛠 Built With <a name="Visual Studio Code"></a>
 
@@ -141,9 +141,9 @@ You can deploy this project using visual studio code and Figma.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **1**
-- [ ] **2**
-- [ ] **3**
+- [ ] **YouTube channel of previous events**
+- [ ] **Press room section**
+- [ ] **Travel and lodging information section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
