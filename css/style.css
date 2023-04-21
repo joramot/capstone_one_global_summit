@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
 
 :root {
   --black: #272a31;
   --orange: #ec5242;
   --gray: #d3d3d3;
+  --gray-hard: #5a5a5a;
   --dark-gray: rgb(53, 49, 49);
   --green: #13d606;
 }
@@ -23,21 +25,24 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
-  font-family: Lato, 'Rubik Dirt', sans-serif;
-  color: var(--green);
+  font-size: 3rem;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 700;
+  color: var(--orange);
   margin: 0;
+  max-width: 600px;
 }
 
 h3 {
-  color: var(--green);
+  color: var(--orange);
   font-size: large;
   font-weight: bold;
 }
 
 hr {
-  background-color: var(--gray);
-  border: 1px solid var(--gray);
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  width: 2rem;
 }
 
 li {
@@ -45,15 +50,23 @@ li {
   text-decoration: none;
 }
 
+li:hover {
+  color: var(--orange);
+  font-weight: bolder;
+  transition: ease-in 0.1ms;
+}
+
 a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--orange);
 }
 
 /* BEGIN Header Section */
 .card img {
   width: 150px;
   height: 150px;
+  border-left: solid 3px var(--orange);
+  border-top: solid 3px var(--orange);
 }
 
 .card div h4 {
@@ -109,7 +122,7 @@ header div:nth-child(2) nav {
 
 .dropdown ul li {
   position: inherit;
-  color: green;
+  color: orange;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -121,26 +134,21 @@ header div:nth-child(2) nav {
   background-size: cover;
 }
 
-.container {
-  margin: 0 15%;
-}
-
 header .container {
   padding: 1.5rem;
   font-weight: bold;
 }
 
-.row p {
-  font-size: 2rem;
-}
-
 .headline .container {
-  padding: 4rem 0 4rem 0;
+  padding: 6rem 0 4rem 0;
+  margin-left: 10%;
 }
 
 .row > p {
-  color: var(--green);
-  font-size: 2rem;
+  color: var(--orange);
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* **END Headline Section** */
@@ -148,9 +156,11 @@ header .container {
 /* **BEGIN Program Section** */
 
 .program {
-  background-color: #272a31;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/background-black.png);
+  background-repeat: repeat;
+  background-size: auto;
   width: 100%;
   padding: 3rem 2rem;
 }
@@ -160,7 +170,7 @@ header .container {
 }
 
 .title {
-  color: #fff;
+  color: var(--gray);
   font-size: xx-large;
   margin-top: 0;
   text-align: center;
@@ -174,30 +184,33 @@ header .container {
 }
 
 .div-line {
-  border: 1px solid var(--green);
+  border: 1px solid var(--orange);
   margin: 0 auto;
   width: 5rem;
 }
 
 .program-card {
-  background-color: rgba(256, 256, 256, 0.3);
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  display: flex;
+
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  color: #fff;
+  background-color: rgba(256, 256, 256, 0.1);
   gap: 1rem;
   align-items: center;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 95%;
+  margin: 0;
+  padding: 1rem;
 }
 
 .program-card-title {
-  color: var(--green);
-  font-size: large;
+  color: var(--orange);
+  font-size: 1.5rem;
 }
 
 .program-card-description {
   color: #fff;
   font-size: medium;
+  text-align: left;
 }
 
 .program-card-icon {
@@ -211,14 +224,14 @@ header .container {
 .card-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
 .join-button {
-  background-color: var(--green);
+  background-color: var(--orange);
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0 5rem;
   font-size: large;
   color: #fff;
   padding: 1rem;
@@ -254,10 +267,11 @@ header .container {
 
 .card hr {
   width: 2rem;
+  margin-left: 0;
 }
 
 .speaker_title {
-  color: var(--green);
+  color: var(--orange);
   font-weight: bold;
   font-style: italic;
 }
@@ -277,7 +291,7 @@ header .container {
 }
 
 .arrow_down span {
-  color: var(--green);
+  color: var(--orange);
 }
 
 /* **END Speakers Section** */
@@ -302,7 +316,9 @@ footer {
   justify-content: center;
   column-gap: 1rem;
   padding: 3rem;
+  color: var(--gray);
   font-weight: bold;
+  background-color: var(--black);
 }
 
 /* END Footer Section */
@@ -312,13 +328,51 @@ footer {
 .about_headline {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  background-image: url(../assets/background-black.png);
+  background-image: url(../assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
 }
 
-.about_headline p {
-  color: #fff;
+.about_headline .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  max-width: 80%;
+}
+
+.about_headline h1 {
+  text-align: center;
+  font-family: cocogoose, sans-serif;
+  font-size: 4rem;
+}
+
+.about_headline .container .about_text {
   line-height: 1.5rem;
+  max-width: 600px;
+  text-align: center;
+  color: var(--gray-hard);
+  background-color: #fff;
+  padding: 1rem;
+  opacity: 0.7;
+  border: solid 1px;
+}
+
+.about_credit {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  line-height: 0.25rem;
+  margin-top: 3rem;
+  color: var(--gray-hard);
+}
+
+.about_credit .email {
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .about_talent {
@@ -326,38 +380,67 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about_talent h2 {
-  font-size: 3rem;
-  color: var(--green);
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  color: var(--gray-hard);
+}
+
+.about_talent hr {
+  width: 4rem;
+  margin: 1rem;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
 .about_talent p {
-  max-width: 90%;
+  max-width: 700px;
   text-align: center;
   line-height: 2rem;
-  background-color: lightgray;
   padding: 1rem;
-  border: solid 1px var(--green);
+  color: var(--gray-hard);
+}
+
+.about_logo {
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+  border: solid 1px var(--gray);
 }
 
 .past-editions {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray);
   align-items: center;
   padding: 4rem;
   gap: 2rem;
+  border-top: solid 1px gray;
 }
 
 .past-editions h2 {
   font-size: xx-large;
-  color: var(--green);
+  color: var(--gray-hard);
   margin-bottom: 0;
 }
 
+.past-editions .about-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.past-editions hr {
+  width: 4rem;
+  margin: 1rem;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
 .past-editions p {
+  color: var(--gray-hard);
   font-size: medium;
 }
 
@@ -376,36 +459,40 @@ header div:nth-child(2) span {
   color: var(--dark-gray);
 }
 
-.past_images {
+.past-editions-images {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
 }
 
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+.image_1 {
+  background-image: url(../images/TalentLand_2021.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 240px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
-.middle div {
-  color: #000;
-  font-size: 1.5rem;
-  padding: 16px 32px;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
+.image_2 {
+  background-image: url(../images/TalentLand_2022.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 240px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 header div:nth-child(1) {
@@ -441,24 +528,28 @@ header div:nth-child(2) {
 
 header > div:nth-child(2) div p {
   margin: 1rem 3.5rem 0 0;
-  border: solid 5px var(--green);
+  border: solid 5px var(--orange);
   padding: 0.5rem 2rem;
-  color: var(--green);
+  color: var(--orange);
   display: none;
 }
 
 .headline .container > div:nth-child(3) p {
-  width: 40rem;
+  max-width: 42rem;
   padding: 1rem;
-  border: solid 1px var(--gray);
+  border: solid 1px var(--gray-hard);
+  background-color: rgba(256, 256, 256, 0.3);
+  line-height: 1.5rem;
 }
 
 .headline .container > div:nth-child(4) p {
   width: 40rem;
   padding: 1rem 1rem 1rem 0;
+  font-family: 'cocogoose', lato, sans-serif;
   font-weight: bolder;
   font-size: 40px;
-  color: var(--dark-gray);
+  color: var(--gray-hard);
+  margin: 0;
 }
 
 .headline .container > div:nth-child(5) p {
@@ -466,24 +557,16 @@ header > div:nth-child(2) div p {
   padding: 1rem 1rem 1rem 0;
   font-weight: bolder;
   font-size: medium;
-  color: var(--dark-gray);
-}
-
-.box {
-  position: relative;
-  width: 50%;
-  border: solid 2px var(--green);
-}
-
-.box:hover .image {
-  opacity: 0.3;
-}
-
-.box:hover .middle {
-  opacity: 1;
+  color: var(--gray-hard);
+  margin: 0;
+  font-family: 'cocogoose', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+
   header div:nth-child(2) span {
     display: none;
   }
@@ -555,12 +638,6 @@ header > div:nth-child(2) div p {
     width: inherit;
   }
 
-  .program-card-title,
-  .program-card-description {
-    margin: 0;
-    text-align: center;
-  }
-
   .display {
     display: block;
     color: #fff;
@@ -578,12 +655,5 @@ header > div:nth-child(2) div p {
 
   .dropdown {
     display: none;
-  }
-
-  .past_images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
   }
 }

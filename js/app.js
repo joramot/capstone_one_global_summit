@@ -51,12 +51,12 @@ featuredSpeakers.innerHTML = `<h2>Featured Speakers</h2>
 speaker.appendChild(featuredSpeakers);
 
 flexcards.className = 'flex-card';
-flexcards.innerHTML = `        <div class="card">
+flexcards.innerHTML = `<div class="card">
 <div>
   <img src=${speakers[0].img}>
 </div>
 <div>
-  <h4><b>${speakers[0].className}</b></h4>
+  <h4><b>${speakers[0].name}</b></h4>
   <p class="speaker_title">${speakers[0].title}</p>
   <hr>
   <p>${speakers[0].description}</p>
