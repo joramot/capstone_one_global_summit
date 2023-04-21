@@ -144,7 +144,7 @@ header .container {
   margin-left: 10%;
 }
 
-.row>p {
+.row > p {
   color: var(--orange);
   font-size: 3rem;
   padding: 0;
@@ -316,8 +316,10 @@ footer {
   align-items: center;
   padding: 3rem 0;
   column-gap: 1.5rem;
+
   /* color: var(--gray); */
   font-weight: bold;
+
   /* background-color: var(--black); */
 }
 
@@ -326,14 +328,13 @@ footer {
   background-color: #fff;
 }
 
-
 .footer-about {
   color: var(--gray);
   background-color: var(--black);
 }
 
 footer .footer_1 {
-  font-family: 'cocogoose', Lato;
+  font-family: 'cocogoose', sans-serif;
 }
 
 /* END Footer Section */
@@ -529,11 +530,11 @@ header div:nth-child(2) {
   margin: 0 10%;
 }
 
-.partner>div:nth-child(1) {
+.partner > div:nth-child(1) {
   display: block;
 }
 
-.partner>div:nth-child(2) {
+.partner > div:nth-child(2) {
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -541,7 +542,7 @@ header div:nth-child(2) {
   padding: 1rem;
 }
 
-header>div:nth-child(2) div p {
+header > div:nth-child(2) div p {
   margin: 1rem 3.5rem 0 0;
   border: solid 5px var(--orange);
   padding: 0.5rem 2rem;
@@ -549,7 +550,7 @@ header>div:nth-child(2) div p {
   display: none;
 }
 
-.headline .container>div:nth-child(3) p {
+.headline .container > div:nth-child(3) p {
   max-width: 42rem;
   padding: 1rem;
   border: solid 1px var(--gray-hard);
@@ -558,7 +559,7 @@ header>div:nth-child(2) div p {
   margin-right: 1rem;
 }
 
-.headline .container>div:nth-child(4) p {
+.headline .container > div:nth-child(4) p {
   padding: 1rem 1rem 1rem 0;
   font-family: 'cocogoose', lato, sans-serif;
   font-weight: bolder;
@@ -567,7 +568,7 @@ header>div:nth-child(2) div p {
   margin: 0;
 }
 
-.headline .container>div:nth-child(5) p {
+.headline .container > div:nth-child(5) p {
   padding: 1rem 1rem 1rem 0;
   font-weight: bolder;
   font-size: medium;
@@ -620,7 +621,7 @@ header>div:nth-child(2) div p {
     display: none;
   }
 
-  header>div:nth-child(2) div p {
+  header > div:nth-child(2) div p {
     display: block;
   }
 
@@ -679,11 +680,12 @@ header>div:nth-child(2) div p {
     column-gap: 1.5rem;
     color: var(--gray);
     font-weight: bold;
+
     /* background-color: var(--black); */
   }
 
   footer .footer_1 {
-    font-family: 'cocogoose', Lato;
+    font-family: 'cocogoose', sans-serif;
     margin-left: 15rem;
     padding-left: 2rem;
   }
