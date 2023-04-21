@@ -316,8 +316,19 @@ footer {
   align-items: center;
   padding: 3rem 0;
   column-gap: 1.5rem;
-  color: var(--gray);
+  /* color: var(--gray); */
   font-weight: bold;
+  /* background-color: var(--black); */
+}
+
+.footer-index {
+  color: var(--black);
+  background-color: #fff;
+}
+
+
+.footer-about {
+  color: var(--gray);
   background-color: var(--black);
 }
 
@@ -668,7 +679,7 @@ header>div:nth-child(2) div p {
     column-gap: 1.5rem;
     color: var(--gray);
     font-weight: bold;
-    background-color: var(--black);
+    /* background-color: var(--black); */
   }
 
   footer .footer_1 {
