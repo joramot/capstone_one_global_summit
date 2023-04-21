@@ -313,13 +313,19 @@ header .container {
 footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 1rem;
-  padding: 3rem;
+  padding: 3rem 0;
+  column-gap: 1.5rem;
   color: var(--gray);
   font-weight: bold;
   background-color: var(--black);
 }
+
+footer .footer_1 {
+  font-family: 'cocogoose', Lato;
+  margin-left: 15rem;
+  padding-left: 2rem;
+}
+
 
 /* END Footer Section */
 
